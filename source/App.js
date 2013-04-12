@@ -22,9 +22,10 @@ enyo.kind({
  		{fit: true,
  			classes: "fittable-sample-fitting-color",
 			components: [
-			    {kind: "video", classes: "video"}
+			        //{kind: "video", classes: "video"}
+			    {tag:'video src="/test/source/test.mp4" width="600" height="338" controls autobuffer ', id:"test"}
 			]},			
-			{classes: "exercice", 
+			{classes: "exercice fittable-sample-shadow3", 
 			components: [
 			  //{kind: "exercice", classes: "exercice"},
 			    {kind: "onyx.InputDecorator", classes: "input",
@@ -41,7 +42,7 @@ enyo.kind({
 		//Kind du menu deroulant droit
 		{kind: "FittableRows", classes: "menu", components: [
 			{fit: true},
-			{kind: "enyo.sample.ListBasicSample", draggable:false, allowHtml:true},
+			{kind: "enyo.sample.ListBasicSample", draggable:false, allowHtml:true, classes: "chapitre"},
 			]}
 	],
 	mouseDown: function(inSender, inEvent) {
@@ -104,7 +105,7 @@ enyo.kind({
 		var i = inEvent.index;
 		// make some mock data if we have none for this row
 		if (!this.names[i]) {
-			this.names[i] = "chapitre"+i;
+			this.names[i] = "Piste "+i;
 		}
 		var n = this.names[i];
 		var ni = ("00000000" + i).slice(-7);

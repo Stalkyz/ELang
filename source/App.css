@@ -1,14 +1,15 @@
 *{margin:0; padding:0;}
 
+body{width:100%;}
+
 .list-sample {
 	background-color: gray;
 }
 .list-sample-list {
-	width: 50%;
+	width: 100%;
 	min-width: 300px;
 	max-width: 600px;
-	margin: auto;
-	background-color: #eee;
+	background-color: #FAFAFA;
 }
 .list-sample-item {
 	border: 1px solid silver;
@@ -24,34 +25,9 @@
 .list-sample-selected {
 	background-color: #c4e3fe;
 }
-/* needed to make onyx-highlight more specific for highlighting to work */
-.onyx-highlight.list-sample-selected {
-	background-color: #dedfdf;
-}
-.fittable-sample-box {
-	border: 2px solid lightblue;
-	padding: 4px;
-}
-.fittable-sample-b {
-	background-color: #F1FFF1;
-}
-.fittable-sample-mtb {
-	margin-top: 3px;
-	margin-bottom: 3px;
-}
-.fittable-sample-mlr {
-	margin-left: 6px;
-	margin-right: 6px;
-}
-.fittable-sample-o {
-	border-color: orange;
-}
-.fittable-sample-height {
-	height: 140px;
-}
 
 .fittable-sample-fitting-color {
-	background: #B7BFC4;
+	background-color: #C6ECF4;
 }
 
 .fittable-sample-shadow {
@@ -121,32 +97,42 @@
 .fittable-sample-fitting-color{
 	width: 100%;
 	height: 20%;
-	position: relative;
-	border: 2px solid #000000;	
+	position: relative;	
 }
 
 .menu{
 	width: 20%;
 	position: absolute;
-	border: 2px solid #000000;
+	background-color: #1681A8;
+	
+	box-shadow: -6px 0px 6px rgba(0,0,0,0.3);
+	-moz-box-shadow: -6px 0px 6px rgba(0,0,0,0.3);
+	-webkit-box-shadow: -6px 0px 6px rgba(0,0,0,0.3);
+	
 }
 
 .video{
 	position: absolute;
-	background-color: green;
 	width: 600px;
 	height: 300px;
 	top: 15%;
 	left: 25%;
-	border: 1px solid #000000;
+	background-color: #000000;
+	
+	box-shadow: 6px 6px 6px rgba(0,0,0,0.3);
+	-moz-box-shadow: 6px 6px 6px rgba(0,0,0,0.3);
+	-webkit-box-shadow: 6px 6px 6px rgba(0,0,0,0.3);
 }
 
 .exercice{
 	position: relative;
 	width: 100%;
 	height: 40%;
-	background-color: yellow;
-	border: 2px solid #000000;
+	background-color: #1681A8;
+	
+	box-shadow: 0 -6px 6px rgba(0,0,0,0.3);
+	-moz-box-shadow: 0 -6px 6px rgba(0,0,0,0.3);
+	-webkit-box-shadow: 0 -6px 6px rgba(0,0,0,0.3);
 }
 
 .popup{
@@ -172,4 +158,19 @@
 	top: 75%;
 	right: 5%;
 	
+}
+
+.chapitre{	
+	position: relative;
+}
+
+#test{
+	position: absolute;
+	top: 10%;
+	left: 25%;
+	background-color: #000000;
+	
+	box-shadow: 6px 6px 6px rgba(0,0,0,0.3);
+	-moz-box-shadow: 6px 6px 6px rgba(0,0,0,0.3);
+	-webkit-box-shadow: 6px 6px 6px rgba(0,0,0,0.3);
 }
